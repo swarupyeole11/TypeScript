@@ -1,0 +1,9 @@
+tsc : used for compiling all the TypeScript files into JavaScript
+to generate the tsconfig.json use the following command : tsc --init 
+
+In tsc.init change the following things :
+           target : 'ES2016'
+           root: './'
+           "outDir": "./dis",   /*It specifies the path where the JS files will be generated after the transpilation*/
+           "noEmitOnError": true,     /*Does not allow the transpilation untill the code id correct */
+           "sourceMap": true,       /* Create source map files for emitted JavaScript files. used in debugging of the code  */
