@@ -1,0 +1,26 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/src/index.ts",
+            "outFiles": [
+                "${workspaceFolder}/**/*.js"
+            ]
+        }
+    ]
+}
+
+/*This is a configuration file in JSON format for the Visual Studio Code (VS Code) Integrated Development Environment (IDE). It is used to configure the launch of a Node.js program.
+ The file specifies the version of the configuration file and includes one configuration object.This configuration object specifies the type of launch as "node", the request as 
+ "launch", and a name "Launch Program". The "skipFiles" field is used to exclude certain files from the debugging process. In this case, it is excluding all files in the "node_internals"
+directory and its subdirectories. The "program" field specifies the entry point of the Node.js program to be launched, which is the "index.ts" file in the "src" directory of the workspace 
+folder. The "outFiles" field is used to specify the location of the output JavaScript files generatedfrom TypeScript files. In this case, it's specifying all JavaScript files in the workspace folder and its subdirectories.*/
