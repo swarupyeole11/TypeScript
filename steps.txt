@@ -7,3 +7,5 @@ In tsc.init change the following things :
            "outDir": "./dis",   /*It specifies the path where the JS files will be generated after the transpilation*/
            "noEmitOnError": true,     /*Does not allow the transpilation untill the code id correct */
            "sourceMap": true,       /* Create source map files for emitted JavaScript files. used in debugging of the code  */
+
+Created a launch.json file in the project by going into the debugger it tells the vscode how to debug the application
