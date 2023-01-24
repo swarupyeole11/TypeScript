@@ -95,3 +95,18 @@ function calculateTax2(salary : number , taxyear? : number) : number
 
 console.log(calculateTax(6000000));
 ---------------------------------------------------------------------------------------------------
+CHAPTER 6 OBJECTS 
+let employee: {
+  readonly name: string; // the readonly allows the variable to be readonly and not be maipulated 
+  faxnum?: number; //? makes the value to passed as optional
+  retire: (age: number) => void;
+  PhNum: number
+} = {
+    name: 'Hello',
+    //providing the structure of the function
+    retire: function (age: number): void {
+        if (age > 60)
+            console.log("the employtee has to retire");
+    },
+    PhNum: 79879_67989
+};
