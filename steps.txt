@@ -1,3 +1,5 @@
+AMAZING HACK TO SEARCH FOR ANY FILE USE THE COMMAND CNTRL + P IN vscode
+
 tsc : used for compiling all the TypeScript files into JavaScript
 to generate the tsconfig.json use the following command : tsc --init 
 
@@ -9,3 +11,19 @@ In tsc.init change the following things :
            "sourceMap": true,       /* Create source map files for emitted JavaScript files. used in debugging of the code  */
 
 Created a launch.json file in the project by going into the debugger it tells the vscode how to debug the application
+                 added the line : "preLaunchTask":"tsc: build - tsconfig.json" , to debug the typescript program
+
+You can launch the the debugger using f10 then you can also list the variables you want ot watch in the debugger
+
+------------------------------------------------------------------------------------------------------------------------------------------
+CHAPTER 2 : DATATYPES
+
+TypeScript introduces the following new DATATYPES : 
+           any unknown never enum tuple  
+
+           jiska koi DATATYPE nahi uska any but try to avoid using any as it kills the purpose of typescript
+
+JavaScript already has the DATATYPES : 
+          string boolean number null undefined object
+
+------------------------------------------------------------------------------------------------------------------------------------------------
