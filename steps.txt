@@ -110,3 +110,9 @@ let employee: {
     },
     PhNum: 79879_67989
 };
+
+----------------------------------------------------------------------------------------------------------------
+CHAPTER 7 TYPE ALIAS
+
+ the type alias is helpful as we do not want to repeat declarations for each new object 
+ 
