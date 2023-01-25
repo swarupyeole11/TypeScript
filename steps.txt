@@ -115,4 +115,50 @@ let employee: {
 CHAPTER 7 TYPE ALIAS
 
  the type alias is helpful as we do not want to repeat declarations for each new object 
- 
+//USE Camelcase for using type 
+
+type Employees = {
+    readonly name: string; // the readonly  makes variable readonly 
+    faxnum?: number; //? makes the value to passed as optional
+    retire: (age: number) => void;
+    PhNum: number
+}
+
+let employees : Employees = {
+      name: 'Hello',
+      retire: function (age: number): void {
+          if (age > 60)
+              console.log("the employtee has to retire");
+      },
+      PhNum: 79879_67989,
+      faxnum: 234_234
+  };
+  
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+CHAPTER 8 TYPE LITERALS
+
+type abc =  1 | 2 | string  // | is for union and & is for intersection in tS
+let val : abc = "hell" // Now val can only be be value 1 or 2 or a string
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+CHAPTER 9 UNION AND INTERSECTIONS
+
+//interesction in typescript 
+
+type Draggable = {
+   drag : ()=>void
+} 
+
+type Resizeable = {
+    resize : ( num2 : number ,num?:number)=>number
+}
+
+type UIWidget = Draggable & Resizeable
+
+let textBox : UIWidget =
+{
+    drag : ()=>console.log("jej"),
+    resize : (num)=>num*4
+}
+here as you can see we used interesection to declare a third type UIWidget
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
