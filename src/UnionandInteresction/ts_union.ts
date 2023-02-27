@@ -35,3 +35,4 @@ console.log(textBox.resize(4));
 type PlayDate = 50 | 100 | 150 | string
 let PlayDate1 : PlayDate = "Hello" //this implies the variable can have the values mentioned in the type playdate only
 
+//Just Like types there are interfaces the biggest benefits of using interfaces is that you can reopen the interface after it's declatration unlike the type 
